@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\Nataliya\.NET\ASP.net_WebAPI\Code\L3\WebApi_repetition\WebApi_repetition\BlazorApp\bin\Release\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Nataliya\.NET\ASP.net_WebAPI\Code\L3\WebApi_repetition\WebApi_repetition\BlazorApp\obj\Release\net5.0\scopedcss\bundle\" />
+</StaticWebAssets>

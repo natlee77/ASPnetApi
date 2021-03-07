@@ -1,0 +1,12 @@
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\bin\Debug\net5.0\BlazorApp1_gibrit.Shared.deps.json
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\bin\Debug\net5.0\BlazorApp1_gibrit.Shared.dll
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\bin\Debug\net5.0\ref\BlazorApp1_gibrit.Shared.dll
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\bin\Debug\net5.0\BlazorApp1_gibrit.Shared.pdb
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.csprojAssemblyReference.cache
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.AssemblyInfoInputs.cache
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.AssemblyInfo.cs
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.csproj.CoreCompileInputs.cache
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.dll
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\ref\BlazorApp1_gibrit.Shared.dll
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L2\Blazor_Server\BlazorApp1_gibrit\Shared\obj\Debug\net5.0\BlazorApp1_gibrit.Shared.pdb

@@ -1,0 +1,55 @@
+﻿@page "/products"
+@using BlazorApp1_Server.Models
+@using BlazorApp1_Server.Data
+@inject WeatherForecastService Service
+
+
+<h3>Products</h3>
+<p>This component demonstrates fetching data from the WebApi Azure server.</p>
+
+
+
+@if (products == null)
+{
+    <p><em>No product found...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Product Name</th>
+                <th>ShortDescription</th>
+                @* <th>LongDescription</th>*@
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.Id  </td>
+                    <td>@product.Name </td>
+                    <td>@product.ShortDescription  </td>
+                    @* <td>@product.  </td>*@
+                    <td>@product.Price  </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<ProductModel> products;//model product    
+
+    protected override async Task OnInitializedAsync()//det körs när sida laddas -ladda automatisk
+    {
+
+        products = await  Service.GetProductAsync();
+        //gick mot data/wetherForecastService-hämta
+    }
+
+     
+}

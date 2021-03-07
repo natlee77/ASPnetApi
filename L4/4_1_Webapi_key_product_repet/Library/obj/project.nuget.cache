@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "DDNadw4NOT4oZs+xey94GpzQKVIcv5HKFnEGE/H+ccutH4nDuQORkEqwa+DjNphAnVWX7P0gjBSBxdPQuYcWpw==",
+  "success": true,
+  "projectFilePath": "D:\\Nataliya\\.NET\\ASP.net_WebAPI\\Code\\L4\\4_1_Webapi_key_product_repet\\Library\\Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\46735\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\46735\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\46735\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,55 @@
+﻿@page "/add-product"
+@inject HttpClient Http
+<h3>AddProduct</h3>
+
+<p>This component demonstrates send data to WebApi Azure server.</p>
+
+
+<EditForm Model="@product" OnSubmit="@CreateProductAsync">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Product Name" @bind="product.Name" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Short Description" @bind="product.ShortDescription" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Long Description" @bind="product.LongDescription">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Price" @bind="product.Price" required>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success mb-4"  >Add product </button>
+    </div>
+</EditForm>
+
+
+
+
+
+
+@code {
+    private CreateProductModel product;
+
+
+
+    private async Task CreateProductAsync()
+    {
+
+
+        await Http.PostAsJsonAsync<CreateProductModel>("https://recapwebapi.azurewebsites.net/api/products ", product);
+
+        //iniciera new model efter product skickat in- rensa gamla info
+        product = new CreateProductModel();
+
+    }   //skick in 1 product till den URL -post
+
+    protected override async Task OnInitializedAsync()//det körs när sida laddas -ladda automatisk
+    {
+        //error -skapade inte object 
+        product = new CreateProductModel();
+
+
+    }
+
+}

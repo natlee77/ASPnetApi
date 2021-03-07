@@ -1,0 +1,9 @@
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\bin\Debug\netstandard2.0\Library.deps.json
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\bin\Debug\netstandard2.0\Library.dll
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\bin\Debug\netstandard2.0\Library.pdb
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\obj\Debug\netstandard2.0\Library.csprojAssemblyReference.cache
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\obj\Debug\netstandard2.0\Library.AssemblyInfoInputs.cache
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\obj\Debug\netstandard2.0\Library.AssemblyInfo.cs
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\obj\Debug\netstandard2.0\Library.csproj.CoreCompileInputs.cache
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\obj\Debug\netstandard2.0\Library.dll
+D:\Nataliya\.NET\ASP.net_WebAPI\Code\L4\4_1_Webapi_key_product_repet\Library\obj\Debug\netstandard2.0\Library.pdb

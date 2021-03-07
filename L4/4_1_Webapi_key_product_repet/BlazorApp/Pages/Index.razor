@@ -1,0 +1,48 @@
+﻿@page "/"
+@inject HttpClient http
+@using Library.Models
+
+<h1>Product</h1>
+
+<p>This component demonstrates product list from the server.</p>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Product Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Product> products;
+
+    protected override async Task OnInitializedAsync()
+        //headers i ATTRIBUTE
+    {
+        /*products = await http.GetFromJsonAsync<IEnumerable<Product>>("https://localhost:44320/api/products");*///beroende på local ||molnet
+
+        //query med key ---tar i blazor utan problem:
+        products = await http.GetFromJsonAsync<IEnumerable<Product>>("https://localhost:44320/api/products?myKey=632a59b3-2f4c-4289-a63a-3f1310455dbd");
+        //
+    }
+}

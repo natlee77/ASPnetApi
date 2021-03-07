@@ -1,0 +1,51 @@
+﻿@page "/"
+@inject HttpClient http
+
+
+
+<h3> Issues</h3>
+@if (issues == null)
+{
+    <p><em>Not found...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>IssueDate</th>
+                <th>Customer</th>
+                <th>ServiceWorker</th>
+                <th>IssueStatus</th>
+                <th>IssueDescription</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var issue in issues)
+            {
+            <tr>
+                <td>@issue.Id </td>
+                <td>@issue.IssueDate </td>
+                <td>@issue.Customer.DispalyName  </td>
+                <td>@issue.ServiceWorker.DispalyName </td>
+                <td>@issue.IssueStatus </td>
+                <td>@issue.IssueDescription </td>
+               
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    //bestämma hur issues ska ser ut
+    private IEnumerable<IssueViewModel> issues;
+
+    protected override async Task OnInitializedAsync()
+    {
+        issues = await http.GetFromJsonAsync<IEnumerable<IssueViewModel>>("https://natsqlwebapi.azurewebsites.net/api/issues");
+    }
+
+
+}

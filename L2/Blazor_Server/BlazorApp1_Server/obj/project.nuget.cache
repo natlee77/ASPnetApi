@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g3dvOATRHzcVoeXf+31QOgPetauQ27fvxYsjCRPFeMo1fnQ2OLnMs2mR1OsBYqsEXo+1iirABJzn9+tkykUd5g==",
+  "success": true,
+  "projectFilePath": "D:\\Nataliya\\.NET\\ASP.net_WebAPI\\Code\\L2\\Blazor_Server\\BlazorApp1_Server\\BlazorApp1_Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\46735\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

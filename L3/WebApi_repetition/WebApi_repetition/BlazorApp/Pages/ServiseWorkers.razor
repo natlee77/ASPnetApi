@@ -1,0 +1,49 @@
+﻿
+
+@page "/serviceworkers"
+@inject HttpClient http
+
+
+
+<h3>ServiseWorkers</h3>
+@if (serviceworkers == null)
+{
+    <p><em>Not found...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var serviceworker in serviceworkers)
+            {
+                <tr>
+                    <td>@serviceworker.Id </td>
+                    <td>@serviceworker.FirstName </td>
+                    <td>@serviceworker.LastName  </td>
+                    <td>@serviceworker.Email </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    //bestämma hur issues ska ser ut
+    private IEnumerable<ServiceWorkerViewModel> serviceworkers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        serviceworkers = await http.GetFromJsonAsync<IEnumerable<ServiceWorkerViewModel>>("https://natsqlwebapi.azurewebsites.net/api/serviceworkers");
+    }
+
+
+}
+

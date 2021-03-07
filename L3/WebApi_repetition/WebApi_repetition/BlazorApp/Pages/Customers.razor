@@ -1,0 +1,50 @@
+﻿
+@page "/customers"
+@inject HttpClient http
+
+
+
+<h3>Customers</h3>
+@if (customers == null)
+{
+    <p><em>Not found...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th> 
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in customers)
+            {
+                <tr>
+                    <td>@customer.Id </td>
+                    <td>@customer.FirstName </td>
+                    <td>@customer.LastName  </td>
+                    <td>@customer.Email </td>                   
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    //bestämma hur issues ska ser ut
+    private IEnumerable<CustomerViewModel> customers;
+
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await http.GetFromJsonAsync<IEnumerable<CustomerViewModel>>("https://natsqlwebapi.azurewebsites.net/api/customers");
+    }
+
+
+}
+
+
+ 
